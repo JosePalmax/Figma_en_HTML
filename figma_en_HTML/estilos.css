@@ -1,0 +1,405 @@
+/* Para que no queden bordes */
+body {
+    margin: 0;
+    background-color: #fce2ca;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor de la imagen para que ocupe el 100% de la pantalla con el 100% de la imagen */
+.contenedor-imagen {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagen {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-logo {
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    width: 25%;
+}
+
+/* Posicion del logo */
+.logo {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    animation: aparecer 3s forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+    z-index: 11;
+    transition: opacity .4s;
+}
+
+.menu-izq {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+
+.contenedor-menus {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    padding-right: 100px;
+    width: 100%;
+}
+
+.contenedor-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+
+.separador {
+    width: 1px;
+    height: 14px;
+    background-color: #f0811e;
+}
+
+a {
+    color: rgb(234, 231, 231);
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.encabezado {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 4em;
+    color: #8B3200;
+}
+
+.contenedor-tipos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.tipos {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+div.tipos p {
+    color: #8B3200;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.secction2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.contenedor-banplt {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 21vw;
+    margin-top: 150px;
+}
+
+.contenedor-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen2 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contenedor-platos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(-60px);
+}
+
+.plato {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    width: 25%;
+    max-width: 510px;
+    border: 2px solid white;
+}
+
+.formulario {
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.reserva {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/*Estilo para el formulario*/
+form input[type="text"],
+form input[type="number"],
+form input[type="email"] {
+    width: 300px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 80%;
+    align-self: center;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: none;
+    display: block;
+}
+
+hr {
+    width: 80%;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+div.imagenes div {
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+div.imagenes img {
+    object-fit: cover;
+    width: 100%;
+    padding-top: 15px;
+}
+
+
+
+.tramitar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    padding: 20px;
+    margin: 40px 40px 40px 200px;
+    font-size: 1.3em;
+    gap: 36px;
+}
+
+div.tramitar p {
+    padding-left: 20px;
+}
+
+div.tramitar img,
+div.resumen img {
+    width: 400px;
+}
+
+.añadir {
+    text-align: center;
+    color: #1747F1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 100%;
+    padding: 20px;
+    margin: 0px 40px 40px 40px;
+}
+
+.contenedor-pagos {
+    display: flex;
+    width: 100%;
+}
+
+.resumen-pago {
+    text-align: center;
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.importe {
+    font-size: 1.5em;
+}
+
+.fecha {
+    color: #8B3200;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenedor-slider {
+    margin: auto;
+    overflow: hidden;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.contenido-slider {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.contenido-slider img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.volver {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.efecto-diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #02d85f;
+}
+
+.boton-volver {
+    color: #000;
+    border: 2px solid #02d85f;
+    border-radius: 0px;
+    padding: 14px 30px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #02d85f;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Estilos de la barra de scroll */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #828282;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: transparent;
+}
